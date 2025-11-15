@@ -1,6 +1,4 @@
 
-> Open this page at [https://siebecluyts.github.io/platformermicrobitjoystickbitv2makecode/](https://siebecluyts.github.io/platformermicrobitjoystickbitv2makecode/)
-
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
@@ -19,6 +17,13 @@ To edit this repository in MakeCode.
 * paste **https://github.com/siebecluyts/platformermicrobitjoystickbitv2makecode** and click import
 
 #### Metadata (used for search, rendering)
-
+## Controls
+The project uses the Joystick:Bit V2 for the extra buttons and the joystick. It is also possible to play without the extension
+###With joystick:bit
+use the joystick to move.
+use the right button to jump.
+###Without joystick:bit
+use A to move left and B to move right. 
+use A+B to jump.
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
