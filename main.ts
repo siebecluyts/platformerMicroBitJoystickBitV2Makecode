@@ -22,6 +22,7 @@ function start () {
     grond4 = game.createSprite(3, 4)
     grond5 = game.createSprite(4, 4)
     spike1 = game.createSprite(4, 4)
+    spike1.set(LedSpriteProperty.Y, 4)
 }
 let spike1: game.LedSprite = null
 let grond5: game.LedSprite = null
