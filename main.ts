@@ -39,8 +39,10 @@ let gameovertexton = 0
 let player: game.LedSprite = null
 start()
 basic.forever(function () {
-    if (!(level == 2) && (!(player.get(LedSpriteProperty.X) == 2 && (player.get(LedSpriteProperty.Y) == 2 || player.get(LedSpriteProperty.Y) == 3)) && gameovertexton == 0)) {
+    if (!(level == 2) && (!(player.get(LedSpriteProperty.X) == 2 && player.get(LedSpriteProperty.Y) == 3) && gameovertexton == 0)) {
         led.unplot(2, 3)
+    }
+    if (level == 2 && (!(player.get(LedSpriteProperty.X) == 2 && (player.get(LedSpriteProperty.Y) == 2 || player.get(LedSpriteProperty.Y) == 3)) && gameovertexton == 0)) {
         led.unplot(2, 2)
     }
 })
