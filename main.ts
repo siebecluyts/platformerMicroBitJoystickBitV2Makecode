@@ -39,6 +39,12 @@ let gameovertexton = 0
 let player: game.LedSprite = null
 start()
 basic.forever(function () {
+    if (!(level == 2) && (!(player.get(LedSpriteProperty.X) == 2 && (player.get(LedSpriteProperty.Y) == 2 || player.get(LedSpriteProperty.Y) == 3)) && gameovertexton == 0)) {
+        led.unplot(2, 3)
+        led.unplot(2, 2)
+    }
+})
+basic.forever(function () {
     if (input.buttonIsPressed(Button.B) || joystickbit.getRockerValue(joystickbit.rockerType.X) <= 200) {
         if (player.get(LedSpriteProperty.X) == 4) {
             player.set(LedSpriteProperty.X, 0)
@@ -68,11 +74,5 @@ basic.forever(function () {
             basic.showString("Game over!")
             start()
         }
-    }
-})
-basic.forever(function () {
-    if (!(level == 2) && (player.get(LedSpriteProperty.X) == 2 && player.get(LedSpriteProperty.Y) == 2 || gameovertexton == 0)) {
-        led.unplot(2, 3)
-        led.unplot(2, 2)
     }
 })
