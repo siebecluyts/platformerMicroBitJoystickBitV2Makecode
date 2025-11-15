@@ -15,7 +15,7 @@ def on_button_pressed_ab():
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
 
 def start():
-    global level, player, grond1, grond2, grond3, grond4, grond5
+    global level, player, grond1, grond2, grond3, grond4, grond5, spike1
     basic.clear_screen()
     joystickbit.init_joystick_bit()
     level = 1
@@ -25,6 +25,7 @@ def start():
     grond3 = game.create_sprite(2, 4)
     grond4 = game.create_sprite(3, 4)
     grond5 = game.create_sprite(4, 4)
+    spike1 = game.create_sprite(4, 4)
 spike1: game.LedSprite = None
 grond5: game.LedSprite = None
 grond4: game.LedSprite = None
