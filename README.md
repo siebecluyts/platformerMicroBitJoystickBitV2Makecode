@@ -18,12 +18,12 @@ To edit this repository in MakeCode.
 
 #### Metadata (used for search, rendering)
 ## Controls
-The project uses the Joystick:Bit V2 for the extra buttons and the joystick. It is also possible to play without the extension
-*###With joystick:bit
-*use the joystick to move.
-*use the right button to jump.
-*###Without joystick:bit
-*use A to move left and B to move right. 
-*use A+B to jump.
+* The project uses the Joystick:Bit V2 for the extra buttons and the joystick. It is also possible to play without the extension
+* With joystick:bit:
+* use the joystick to move.
+* use the right button to jump.
+* Without joystick:bit:
+* use A to move left and B to move right. 
+* use A+B to jump.
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
