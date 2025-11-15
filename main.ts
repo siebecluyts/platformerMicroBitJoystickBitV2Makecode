@@ -12,6 +12,7 @@ input.onButtonPressed(Button.AB, function () {
     player.change(LedSpriteProperty.Y, 1)
 })
 function start () {
+    gameovertexton = 0
     basic.clearScreen()
     joystickbit.initJoystickBit()
     level = 1
@@ -22,7 +23,10 @@ function start () {
     grond4 = game.createSprite(3, 4)
     grond5 = game.createSprite(4, 4)
     spike1 = game.createSprite(4, 4)
-    spike1.set(LedSpriteProperty.Y, 4)
+    basic.pause(100)
+    spike1.delete()
+    led.unplot(2, 3)
+    led.unplot(2, 2)
 }
 let spike1: game.LedSprite = null
 let grond5: game.LedSprite = null
@@ -31,6 +35,7 @@ let grond3: game.LedSprite = null
 let grond2: game.LedSprite = null
 let grond1: game.LedSprite = null
 let level = 0
+let gameovertexton = 0
 let player: game.LedSprite = null
 start()
 basic.forever(function () {
@@ -58,9 +63,16 @@ basic.forever(function () {
     if (level == 2) {
         spike1 = game.createSprite(2, 3)
         if (player.get(LedSpriteProperty.X) == 2 && player.get(LedSpriteProperty.Y) == 3) {
+            gameovertexton = 1
             basic.clearScreen()
             basic.showString("Game over!")
             start()
         }
+    }
+})
+basic.forever(function () {
+    if (!(level == 2) && (player.get(LedSpriteProperty.X) == 2 && player.get(LedSpriteProperty.Y) == 2 || gameovertexton == 0)) {
+        led.unplot(2, 3)
+        led.unplot(2, 2)
     }
 })
