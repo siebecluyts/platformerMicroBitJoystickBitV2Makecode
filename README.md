@@ -15,6 +15,7 @@ To edit this repository in MakeCode.
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/siebecluyts/platformermicrobitjoystickbitv2makecode** and click import
+* or use [https://makecode.microbit.org/S29859-26231-53771-51175](this link.)
 
 #### Metadata (used for search, rendering)
 ## Controls
